@@ -48,15 +48,8 @@ public class Lemmatyzator {
         return super.hashCode();
     }
 
-    HashMap<String, String> mapa;
-
     @Override
     public boolean equals(Object obj) {
-        if (obj instanceof Lemmatyzator)
-        {
-            Lemmatyzator other = (Lemmatyzator) obj;
-            return mapa.equals(other.mapa);
-        }
-        else return false;
+        return super.equals(obj);
     }
 }
